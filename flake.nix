@@ -31,6 +31,22 @@
   inputs."dye-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dye-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."dye-v1_1_0".dir   = "v1_1_0";
+  inputs."dye-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."dye-v1_1_0".ref   = "master";
+  inputs."dye-v1_1_0".repo  = "dye";
+  inputs."dye-v1_1_0".type  = "github";
+  inputs."dye-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dye-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."dye-v1_1_1".dir   = "v1_1_1";
+  inputs."dye-v1_1_1".owner = "nim-nix-pkgs";
+  inputs."dye-v1_1_1".ref   = "master";
+  inputs."dye-v1_1_1".repo  = "dye";
+  inputs."dye-v1_1_1".type  = "github";
+  inputs."dye-v1_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dye-v1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
